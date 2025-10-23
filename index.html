@@ -1,32 +1,116 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exported Figma Design</title>
-  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <title>Đám cưới tuyệt vời nhất</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
 
-  <link rel="stylesheet" href="styles.css">
+    header {
+      background-color: #c85a5a;
+      color: white;
+      padding: 20px;
+      font-size: 1.5em;
+      display: inline-block;
+      margin: 40px auto;
+      border-radius: 6px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .flower {
+      width: 60px;
+      height: auto;
+      vertical-align: middle;
+      margin: 0 20px;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+
+    input, select {
+      width: 100%;
+      background-color: #6b5b8a;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    input::placeholder {
+      color: #ddd;
+    }
+
+    button {
+      background-color: #b24a60;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #993d52;
+    }
+  </style>
 </head>
 <body>
-<div class="desktop-1-1">
-<img src="images/vector-1-2.svg" class="vector-1-2" alt="vector-1" />
-<img src="images/vector-2-3.svg" class="vector-2-3" alt="vector-2" />
-<img src="images/vector-3-4.svg" class="vector-3-4" alt="vector-3" />
-<img src="images/vector-4-5.svg" class="vector-4-5" alt="vector-4" />
-<div class="rectangle-1-6"></div>
-<p class="text-7"><span class="text-white">Dam cuoi tuyet voi nhat</span></p>
-<p class="text-8"><span class="text-black">Ten la gi</span></p>
-<p class="text-9"><span class="text-black">Tham du duoc khong</span></p>
-<p class="text-10"><span class="text-black">An chay khong</span></p>
-<div class="frame-1-11">
-<p class="text-12"><span class="text-white">Insert text here</span></p>
-</div>
-<div class="rectangle-2-13"></div>
-<div class="rectangle-4-14"></div>
-<div class="rectangle-3-15"></div>
-</div>
+
+  <div class="header-row">
+    <img src="flower-left.png" alt="Flower left" class="flower">
+    <header>Đám cưới tuyệt vời nhất</header>
+    <img src="flower-right.png" alt="Flower right" class="flower">
+  </div>
+
+  <div class="container">
+    <form>
+      <label for="name">Tên là gì</label>
+      <input type="text" id="name" name="name" placeholder="Nhập tên của bạn">
+
+      <label for="attend">Tham dự được không</label>
+      <select id="attend" name="attend">
+        <option value="">-- Chọn một --</option>
+        <option value="yes">Có, mình sẽ đến</option>
+        <option value="no">Rất tiếc, mình không thể</option>
+      </select>
+
+      <label for="vegetarian">Ăn chay không</label>
+      <select id="vegetarian" name="vegetarian">
+        <option value="">-- Chọn một --</option>
+        <option value="yes">Có</option>
+        <option value="no">Không</option>
+      </select>
+
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
 
 </body>
 </html>
